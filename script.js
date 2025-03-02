@@ -3,13 +3,10 @@ let firstname = document.querySelector("#fname");
 let lastname = document.querySelector("#lname");
 let phone = document.querySelector("#phn");
 let emailid = document.querySelector("#email");
-
+let form = document.querySelector("form");
 function showAlert(event) {
 	  event.preventDefault();
-	alert(`First Name: ${firstname.value}
-	Last Name: ${lastname.value}
-	Phone Number: ${phone.value}
-	Email ID: ${emailid.value}`)
+	alert(`First Name: ${firstname.value}\nLast Name: ${lastname.value}\nPhone Number: ${phone.value}\nEmail ID: ${emailid.value}`)
 }
 
 form.addEventListener("submit",showAlert);
